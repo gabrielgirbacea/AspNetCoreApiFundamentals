@@ -1,9 +1,5 @@
 ﻿using AutoMapper;
 using CoreCodeCamp.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CoreCodeCamp.Data
 {
@@ -11,7 +7,7 @@ namespace CoreCodeCamp.Data
     {
         public CampProfile()
         {
-            this.CreateMap<Camp, CampDto>();
+            this.CreateMap<Camp, CampDto>().ReverseMap();
         }
     }
 }
