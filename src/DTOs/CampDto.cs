@@ -8,6 +8,8 @@ namespace CoreCodeCamp.DTOs
 {
     public class CampDto
     {
+
+        public int CampId { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
